@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Jost", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+      }
+    </style>
+    <title>FRACABEDO</title>
+  </head>
+
+  <body>
+    <header class="sticky top-0 z-20 w-full bg-white shadow">
+      <nav
+        class="p-6 lg:px-24 container mx-auto flex items-center justify-between"
+      >
+        <button
+          class="font-medium sm:hidden"
+          data-drawer-target="drawer-nav"
+          data-drawer-show="drawer-nav"
+          aria-controls="drawer-nav"
+        >
+          <i data-lucide="menu"></i>
+        </button>
+        <div class="gap-12 items-center hidden sm:flex">
+          <a href="./index.html" class="font-bold text-neutral-900">
+            <span class="text-4xl">FC<span class="text-red-700">A</span></span>
+          </a>
+          <ul class="flex gap-4 sm:gap-12 items-center text-sm flex">
+            <li>
+              <a href="./index.html" class="my-8 group cursor-pointer">
+                <span class="font-medium text-sm group-hover:text-neutral-800"
+                  >HOME</span
+                >
+                <div
+                  class="h-0.5 bg-neutral-900 w-0 group-hover:w-full transition-all ease-in-out"
+                ></div>
+              </a>
+            </li>
+            <li>
+              <a href="./shop.html" class="my-8 group cursor-pointer">
+                <span class="font-medium text-sm text-neutral-800">SHOP</span>
+                <div
+                  class="h-0.5 w-0 bg-neutral-900 group-hover:w-full transition-all ease-in-out"
+                ></div>
+              </a>
+            </li>
+            <li>
+              <a href="./about.html" class="my-8 group cursor-pointer">
+                <span class="font-medium text-sm text-neutral-800">ABOUT</span>
+                <div
+                  class="h-0.5 w-0 bg-neutral-900 group-hover:w-full transition-all ease-in-out"
+                ></div>
+              </a>
+            </li>
+            <li>
+              <a href="./contact.html" class="my-8 group cursor-pointer">
+                <span class="font-medium text-sm group-hover:text-neutral-800"
+                  >CONTACT</span
+                >
+                <div
+                  class="h-0.5 w-0 bg-neutral-900 w-full transition-all ease-in-out"
+                ></div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="./index.html" class="sm:hidden">
+          <span class="text-4xl font-bold"
+            >FC<span class="text-red-700">A</span></span
+          >
+        </a>
+        <ul class="flex gap-4 sm:gap-12 items-center text-sm">
+          <li class="hidden sm:block">
+            <button class="font-medium">
+              <i
+                data-lucide="user"
+                data-drawer-target="drawer-user"
+                data-drawer-show="drawer-user"
+                aria-controls="drawer-user"
+              ></i>
+            </button>
+          </li>
+          <li class="hidden sm:block">
+            <button class="font-medium">
+              <i data-lucide="heart"></i>
+            </button>
+          </li>
+          <li>
+            <button
+              class="font-medium"
+              data-drawer-target="drawer-cart"
+              data-drawer-show="drawer-cart"
+              aria-controls="drawer-cart"
+            >
+              <i data-lucide="shopping-bag"></i>
+            </button>
+          </li>
+          <!-- <li>
+            <button class="font-medium">
+              <i data-lucide="menu"></i>
+            </button>
+          </li> -->
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="py-20">
+        <div class="container mx-auto p-4">
+          <h1 class="text-4xl text-center">
+            CONTACT <span class="font-bold">US</span>
+          </h1>
+          <div class="grid grid-cols-2 place-items-center mt-12">
+            <div>
+              <h1 class="text-2xl font-medium">Store in Philippines</h1>
+              <p>Lorem Ipsum, Zamboanga City, 7000</p>
+              <p>Philippines</p>
+            </div>
+            <div>
+              <h1 class="text-2xl font-medium">Store in London</h1>
+              <p>Lorem Ipsum, London, 1234</p>
+              <p>United Kingdom</p>
+            </div>
+          </div>
+          <div class="container mx-auto px-6 xl:px-64 mt-12">
+            <h1 class="font-bold text-xl">Get In Touch</h1>
+            <form action="" class="mt-4 space-y-4">
+              <input
+                type="text"
+                class="h-12 w-full border-2 border-neutral-400"
+                placeholder="Name"
+              />
+              <input
+                type="text"
+                class="h-12 w-full border-2 border-neutral-400"
+                placeholder="Email Address"
+              />
+              <textarea
+                class="w-full border-2 border-neutral-400 p-3"
+                placeholder="Message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <button class="py-2.5 px-4 bg-neutral-900 text-white h-16 w-64">
+                SUBMIT
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="py-24 bg-neutral-50">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-12">
+          <div class="flex flex-col items-center justify-center gap-2">
+            <i data-lucide="package" class="h-16 w-16 mb-2"></i>
+            <h1 class="text-lg font-medium">FAST AND FREE DELIVERY</h1>
+            <span class="text-sm text-gray-400"
+              >Free delivery for all orders over $140
+            </span>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-2">
+            <i data-lucide="headset" class="h-16 w-16 mb-2"></i>
+            <h1 class="text-lg font-medium">24/7 CUSTOMER SUPPORT</h1>
+            <span class="text-sm text-gray-400"
+              >Friendly 24/7 customer support
+            </span>
+          </div>
+          <div class="flex flex-col items-center justify-center gap-2">
+            <i data-lucide="shield-check" class="h-16 w-16 mb-2"></i>
+            <h1 class="text-lg font-medium">MONEY BACK GUARANTEE</h1>
+            <span class="text-sm text-gray-400"
+              >We return money within 30 days
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Start Cart -->
+    <div
+      id="drawer-cart"
+      class="fixed top-0 left-0 z-40 w-96 h-screen overflow-y-auto transition-transform -translate-x-full bg-white"
+      tabindex="-1"
+      aria-labelledby="drawer-cart-label"
+    >
+      <div class="bg-neutral-100 p-8">
+        <h5
+          id="drawer-cart-label"
+          class="text-base font-medium text-neutral-800 uppercase"
+        >
+          SHOPPING BAG
+        </h5>
+        <button
+          type="button"
+          data-drawer-hide="drawer-cart"
+          aria-controls="drawer-cart"
+          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center"
+        >
+          <svg
+            aria-hidden="true"
+            class="w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <span class="sr-only">Close menu</span>
+        </button>
+      </div>
+      <div class="py-4 overflow-y-auto p-4">
+        <ul class="divide-y space-y-4">
+          <li class="pt-4">
+            <div class="relative flex gap-4">
+              <button>
+                <i
+                  data-lucide="x"
+                  class="absolute top-0 right-2 text-gray-400 h-4"
+                ></i>
+              </button>
+              <div class="h-32 w-32 bg-neutral-100"></div>
+              <div class="w-1/2 space-y-1">
+                <h5>Lorem Ipsum</h5>
+                <h5 class="text-neutral-500 text-sm">Color: Neutral</h5>
+                <h5 class="text-neutral-500 text-sm">Size: L</h5>
+                <div class="w-full flex items-center justify-between">
+                  <div class="flex mt-2 gap-4 text-sm items-center">
+                    <button>-</button>
+                    <div>1</div>
+                    <button>+</button>
+                  </div>
+                  <h4 class="text-lg font-medium">$29.99</h4>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="pt-4">
+            <div class="relative flex gap-4">
+              <button>
+                <i
+                  data-lucide="x"
+                  class="absolute top-0 right-2 text-gray-400 h-4"
+                ></i>
+              </button>
+              <div class="h-32 w-32 bg-neutral-100"></div>
+              <div class="w-1/2 space-y-1">
+                <h5>Lorem Ipsum</h5>
+                <h5 class="text-neutral-500 text-sm">Color: Neutral</h5>
+                <h5 class="text-neutral-500 text-sm">Size: L</h5>
+                <div class="w-full flex items-center justify-between">
+                  <div class="flex mt-2 gap-4 text-sm items-center">
+                    <button>-</button>
+                    <div>1</div>
+                    <button>+</button>
+                  </div>
+                  <h4 class="text-lg font-medium">$29.99</h4>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="pt-4">
+            <div class="relative flex gap-4">
+              <button>
+                <i
+                  data-lucide="x"
+                  class="absolute top-0 right-2 text-gray-400 h-4"
+                ></i>
+              </button>
+              <div class="h-32 w-32 bg-neutral-100"></div>
+              <div class="w-1/2 space-y-1">
+                <h5>Lorem Ipsum</h5>
+                <h5 class="text-neutral-500 text-sm">Color: Neutral</h5>
+                <h5 class="text-neutral-500 text-sm">Size: L</h5>
+                <div class="w-full flex items-center justify-between">
+                  <div class="flex mt-2 gap-4 text-sm items-center">
+                    <button>-</button>
+                    <div>1</div>
+                    <button>+</button>
+                  </div>
+                  <h4 class="text-lg font-medium">$29.99</h4>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="h-full w-full px-4 py-8">
+          <hr />
+          <div class="mt-4 flex items-center justify-between">
+            <span class="font-medium">SUBTOTAL:</span>
+            <span class="text-xl">$89.97</span>
+          </div>
+          <button class="mt-4 py-2.5 px-5 bg-neutral-100 w-full">
+            View Cart
+          </button>
+          <button class="mt-2 py-2.5 px-5 bg-neutral-800 text-white w-full">
+            Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- End Cart -->
+
+    <!-- Start Nav -->
+    <div
+      id="drawer-nav"
+      class="fixed top-0 left-0 z-40 w-64 h-screen overflow-y-auto transition-transform -translate-x-full bg-white"
+      tabindex="-1"
+      aria-labelledby="drawer-nav-label"
+    >
+      <div class="bg-neutral-100 p-8">
+        <h5
+          id="drawer-nav-label"
+          class="text-base font-medium text-neutral-800 uppercase"
+        >
+          MENU
+        </h5>
+        <button
+          type="button"
+          data-drawer-hide="drawer-nav"
+          aria-controls="drawer-nav"
+          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center"
+        >
+          <svg
+            aria-hidden="true"
+            class="w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <span class="sr-only">Close menu</span>
+        </button>
+      </div>
+      <div class="py-4 overflow-y-auto p-8">
+        <ul class="flex flex-col gap-6 sm:gap-12 items-start flex">
+          <li>
+            <a href="./index.html" class="my-8 group cursor-pointer">
+              <span class="font-medium text-sm group-hover:text-neutral-800"
+                >HOME</span
+              >
+              <div
+                class="h-0.5 w-0 bg-neutral-900 group-hover:w-full transition-all ease-in-out"
+              ></div>
+            </a>
+          </li>
+          <li>
+            <a href="./shop.html" class="my-8 group cursor-pointer">
+              <span class="font-medium text-sm group-hover:text-neutral-800"
+                >SHOP</span
+              >
+              <div
+                class="h-0.5 w-0 bg-neutral-900 group-hover:w-full transition-all ease-in-out"
+              ></div>
+            </a>
+          </li>
+          <li>
+            <a href="./about.html" class="my-8 group cursor-pointer">
+              <span class="font-medium text-sm group-hover:text-neutral-800"
+                >ABOUT</span
+              >
+              <div
+                class="h-0.5 w-0 bg-neutral-900 group-hover:w-full transition-all ease-in-out"
+              ></div>
+            </a>
+          </li>
+          <li>
+            <a href="./contact.html" class="my-8 group cursor-pointer">
+              <span class="font-medium text-sm group-hover:text-neutral-800"
+                >CONTACT</span
+              >
+              <div
+                class="h-0.5 w-0 bg-neutral-900 group-hover:w-full transition-all ease-in-out"
+              ></div>
+            </a>
+          </li>
+          <li>
+            <a href="./wishlist.html" class="my-8 group cursor-pointer">
+              <span class="font-medium text-sm group-hover:text-neutral-800"
+                >WISHLIST</span
+              >
+              <div
+                class="h-0.5 w-0 bg-neutral-900 group-hover:w-full transition-all ease-in-out"
+              ></div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Nav -->
+
+    <!-- Start User -->
+    <div
+      id="drawer-user"
+      class="fixed top-0 left-0 z-40 w-96 h-screen overflow-y-auto transition-transform -translate-x-full bg-white"
+      tabindex="-1"
+      aria-labelledby="drawer-user-label"
+    >
+      <div class="bg-neutral-100 p-8">
+        <h5
+          id="drawer-user-label"
+          class="text-base font-medium text-neutral-800 uppercase"
+        >
+          LOGIN
+        </h5>
+        <button
+          type="button"
+          data-drawer-hide="drawer-user"
+          aria-controls="drawer-user"
+          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center"
+        >
+          <svg
+            aria-hidden="true"
+            class="w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <span class="sr-only">Close menu</span>
+        </button>
+      </div>
+      <div class="py-4 overflow-y-auto p-4">
+        <form action="./admin/index.html" class="grid grid-cols-1 gap-2">
+          <div class="grid gap-1.5">
+            <input
+              type="text"
+              class="h-14 w-full border-neutral-400"
+              placeholder="Username or email address"
+            />
+          </div>
+          <div class="grid gap-1.5">
+            <input
+              type="password"
+              class="h-14 w-full border-neutral-400"
+              placeholder="Password"
+            />
+          </div>
+          <div class="flex justify-between">
+            <div class="flex items-center gap-2">
+              <input type="checkbox" name="" id="remember" />
+              <label for="remember">Remember me</label>
+            </div>
+            <a href="">Lost password?</a>
+          </div>
+          <button class="mt-2 py-2.5 px-5 bg-neutral-800 text-white w-full">
+            Login
+          </button>
+          <a href="" class="text-center"
+            >No account yet? <span class="underline">Create Account</span></a
+          >
+        </form>
+      </div>
+    </div>
+    <!-- End User -->
+
+    <footer class="p-6 w-full text-center">
+      <span>© 2024 FRACABEDO All rights reserved</span>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
